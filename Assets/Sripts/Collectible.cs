@@ -8,7 +8,6 @@ public class Collectible : MonoBehaviour
         {
             GameManager.Instance.IncrementAppleCount();
             Destroy(gameObject);
-            Debug.Log("Colision con manzana");
         }
     }
 }
