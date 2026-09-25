@@ -9,14 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a6b5522be8970a8499a9ba13cb5497a4
   - enabled: 1
-    path: Assets/Scenes/PersonajeN-1.unity
-    guid: 09a4cc4c077c19d4bb06479df482efaf
+    path: Assets/Scenes/BLA TERRENO.unity
+    guid: 646a96ed9d1fdc2429bdc6a193ae1525
   - enabled: 1
     path: Assets/Scenes/WinSecene.unity
     guid: 5676a4da687b6dc4d9d75c32eaca3d68
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
