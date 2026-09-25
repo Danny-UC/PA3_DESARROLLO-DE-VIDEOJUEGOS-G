@@ -169,3 +169,8 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# TerrainData assets are binary, not YAML. They must go to LFS.
+# Esta regla DEBE ir después de la regla general *.asset para sobreescribirla.
+*Terrain.asset          lfs
+*TerrainData.asset      lfs
