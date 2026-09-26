@@ -10,6 +10,6 @@ public class WinScene : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu");
     }
 }
