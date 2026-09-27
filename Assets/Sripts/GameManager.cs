@@ -6,6 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    public AudioSource audioSource;
+    public AudioClip appleCollectSound;
+    public AudioClip winSound;
+
     public TMP_Text appleCountText;
     public TMP_Text totalAppleCountText;
     private int appleNumber = 0;
@@ -28,17 +32,24 @@ public class GameManager : MonoBehaviour
         Debug.Log("Total de manzanas en escena: " + totalAppleCountText.text);
     }
 
+    public void NextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     public void IncrementAppleCount()
     {
         appleNumber++;
         appleCountText.text = appleNumber.ToString();
+        audioSource.PlayOneShot(appleCollectSound);
         Debug.Log("Colision con manzana " + appleCountText.text);
 
         if (appleNumber == totalAppleCount)
         {
             Debug.Log("¡Has recogido todas las manzanas!");
             Debug.Log("Te ganaste un premio!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            audioSource.PlayOneShot(winSound);
+            Invoke("NextScene", 2f);
         }
     }
 
