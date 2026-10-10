@@ -12,11 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/BLA TERRENO.unity
     guid: 646a96ed9d1fdc2429bdc6a193ae1525
   - enabled: 1
+    path: Assets/Scenes/NIVEL 2.unity
+    guid: 50e8028e7e589ea4ba4644f7718179fd
+  - enabled: 1
     path: Assets/Scenes/WinSecene.unity
     guid: 5676a4da687b6dc4d9d75c32eaca3d68
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 80c9435c6dc14e040b871c35ae49f002
+  - enabled: 1
+    path: Assets/Scenes/SeleccionNiveles.unity
+    guid: ba7b0dd333955ed4187f6d66fc0ef103
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

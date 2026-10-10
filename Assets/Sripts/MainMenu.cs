@@ -1,16 +1,24 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 1f;
+    }
+
     public void Play()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("SeleccionNiveles");
     }
 
     public void Quit()
     {
-        Application.Quit();
         Debug.Log("Salir del juego");
+        Application.Quit();
     }
 }
